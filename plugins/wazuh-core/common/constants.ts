@@ -229,7 +229,7 @@ export const AUTHORIZED_AGENTS = 'authorized-agents';
 export const WAZUH_LINK_GITHUB = 'https://github.com/wazuh';
 export const WAZUH_LINK_GOOGLE_GROUPS =
   'https://groups.google.com/forum/#!forum/wazuh';
-export const WAZUH_LINK_SLACK = 'https://wazuh.com/community/join-us-on-slack';
+export const WAZUH_LINK_SLACK = 'https://theopenarmor.org/community/join-us-on-slack';
 
 export const HEALTH_CHECK = 'health-check';
 
@@ -275,7 +275,7 @@ export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH =
   'images/logo_reports.png';
 export const REPORTS_PRIMARY_COLOR = '#256BD1';
 export const REPORTS_PAGE_FOOTER_TEXT = 'Copyright © 2023 Wazuh, Inc.';
-export const REPORTS_PAGE_HEADER_TEXT = 'info@wazuh.com\nhttps://wazuh.com';
+export const REPORTS_PAGE_HEADER_TEXT = 'info@theopenarmor.org\nhttps://theopenarmor.org';
 
 // Plugin platform
 export const PLUGIN_PLATFORM_NAME = 'dashboard';

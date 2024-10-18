@@ -27,9 +27,9 @@ describe('[settings] Methods', () => {
   //     ${false}             | ${'customization.reports.footer'} | ${''}                     | ${'Copyright © 2023 Wazuh, Inc.'}
   //     ${false}             | ${'customization.reports.footer'} | ${''}                     | ${'Copyright © 2023 Wazuh, Inc.'}
   //     ${true}              | ${'customization.reports.header'} | ${'Custom header'}        | ${'Custom header'}
-  //     ${true}              | ${'customization.reports.header'} | ${''}                     | ${'info@wazuh.com\nhttps://wazuh.com'}
-  //     ${false}             | ${'customization.reports.header'} | ${'Custom header'}        | ${'info@wazuh.com\nhttps://wazuh.com'}
-  //     ${false}             | ${'customization.reports.header'} | ${''}                     | ${'info@wazuh.com\nhttps://wazuh.com'}
+  //     ${true}              | ${'customization.reports.header'} | ${''}                     | ${'info@theopenarmor.org\nhttps://theopenarmor.org'}
+  //     ${false}             | ${'customization.reports.header'} | ${'Custom header'}        | ${'info@theopenarmor.org\nhttps://theopenarmor.org'}
+  //     ${false}             | ${'customization.reports.header'} | ${''}                     | ${'info@theopenarmor.org\nhttps://theopenarmor.org'}
   //   `(
   //     `customizationEnabled: $customizationEnabled | settingKey: $settingKey | configValue: $configValue | expected: $expected`,
   //     ({ configValue, customizationEnabled, expected, settingKey }) => {

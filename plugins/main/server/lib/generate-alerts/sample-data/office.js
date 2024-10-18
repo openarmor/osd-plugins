@@ -69,11 +69,11 @@ export const arrayIp = [
   '140.82.113.3',
 ];
 export const arrayUserId = [
-  'smith@wazuh.com',
-  'williams@wazuh.com',
-  'frank@wazuh.com',
-  'jones@wazuh.com',
-  'brown@wazuh.com',
+  'smith@theopenarmor.org',
+  'williams@theopenarmor.org',
+  'frank@theopenarmor.org',
+  'jones@theopenarmor.org',
+  'brown@theopenarmor.org',
 ];
 export const arrayTargetOffice = [
   {
@@ -88,7 +88,7 @@ export const arrayActorOffice = [
     Type: 0,
   },
   {
-    ID: 'albe@wazuh.com',
+    ID: 'albe@theopenarmor.org',
     Type: 5,
   },
 ];
@@ -759,7 +759,7 @@ export const arrayLogs = [
     OrganizationId: '0fea4e03-8146-453b-b889-54b4bd11565b',
     RecordType: 8,
     ResultStatus: 'Success',
-    UserKey: '100320014080D3AD@wazuh.com',
+    UserKey: '100320014080D3AD@theopenarmor.org',
     UserType: 0,
     Version: 1,
     Workload: 'AzureActiveDirectory',
@@ -834,7 +834,7 @@ export const arrayLogs = [
     OrganizationId: '0fea4e03-8146-453b-b889-54b4bd11565b',
     RecordType: 8,
     ResultStatus: 'Success',
-    UserKey: '100320014080D3AD@wazuh.com',
+    UserKey: '100320014080D3AD@theopenarmor.org',
     UserType: 0,
     Version: 1,
     Workload: 'AzureActiveDirectory',
@@ -1436,7 +1436,7 @@ export const arrayLogs = [
     MailboxGuid: 'fc108b45-9d51-4b87-a473-9d5a0e404966',
     MailboxOwnerMasterAccountSid: 'S-1-5-10',
     MailboxOwnerSid: 'S-1-5-21-2986565805-1835265550-1383574073-20743067',
-    MailboxOwnerUPN: 'TestSharePoint@wazuh.com',
+    MailboxOwnerUPN: 'TestSharePoint@theopenarmor.org',
     OrganizationName: 'wazuh.testytest.com',
     OriginatingServer: 'AS8PR04MB8465 (15.20.4150.023)\r\n',
     Item: {
@@ -1474,7 +1474,7 @@ export const arrayLogs = [
     MailboxGuid: 'fc108b45-9d51-4b87-a473-9d5a0e404966',
     MailboxOwnerMasterAccountSid: 'S-1-5-10',
     MailboxOwnerSid: 'S-1-5-21-2986565805-1835265550-1383574073-20743067',
-    MailboxOwnerUPN: 'TestSharePoint@wazuh.com',
+    MailboxOwnerUPN: 'TestSharePoint@theopenarmor.org',
     OrganizationName: 'wazuh.testytest.com',
     OriginatingServer: 'AS8PR04MB8465 (15.20.4150.023)\r\n',
     Item: {
@@ -1547,7 +1547,7 @@ export const arrayLogs = [
       },
       {
         Name: 'EmailAddresses',
-        Value: 'smtp:TestSharePoint@wazuh.testytest.com;SMTP:TestSharePoint@wazuh.com',
+        Value: 'smtp:TestSharePoint@wazuh.testytest.com;SMTP:TestSharePoint@theopenarmor.org',
       },
       {
         Name: 'IncludeSoftDeletedObjects',

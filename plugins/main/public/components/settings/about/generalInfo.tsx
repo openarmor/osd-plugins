@@ -77,7 +77,7 @@ export const SettingsAboutGeneralInfo = ({
                   aria-label='Slack'
                   iconType='logoSlack'
                   iconSize='xxl'
-                  href='https://wazuh.com/community/join-us-on-slack/'
+                  href='https://theopenarmor.org/community/join-us-on-slack/'
                   target='_blank'
                 >
                   Slack

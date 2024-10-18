@@ -6,7 +6,7 @@ then
   exit
 fi
 
-# idp container launches and docker-compose returns too quickly, do not wait for container to 
+# idp container launches and docker-compose returns too quickly, do not wait for container to
 # be healthy as it has no dependencies, so we wait before continuing
 sleep 7
 
@@ -44,13 +44,13 @@ P='{
 curl -sS -L -X POST "${B}/admin/realms" "${H[@]}" -d "$P" | grep -v "Conflict detected"
 
 
-# Add admin certificates to keycloak as these are used by indexer to sign saml 
+# Add admin certificates to keycloak as these are used by indexer to sign saml
 # messages. These should be uploaded to keycloak if we want it to verify indexer messages.
 key=$(docker exec $indexer cat /usr/share/elasticsearch/config/certs/admin-key.pem | grep -v "PRIVATE KEY" | tr -d "\n")
 cert=$(docker exec $indexer cat /usr/share/elasticsearch/config/certs/admin.pem | grep -v CERTIFICATE| tr -d "\n")
 
 
-# Create client 
+# Create client
 # By default the client does not verify the client signature on saml messages
 # but it could be enabled for testing purposes
 PC="{
@@ -70,7 +70,7 @@ PC="{
     \"saml.signing.private.key\": \"$key\",
     \"saml.client.signature\": \"true\",
     \"saml_single_logout_service_url_redirect\": \"https://localhost:5601\",
-    \"post.logout.redirect.uris\": \"https://localhost:5601*\" 
+    \"post.logout.redirect.uris\": \"https://localhost:5601*\"
   }
 }"
 
@@ -79,7 +79,7 @@ curl -sS -L -X POST "${B}/admin/realms/${REALM}/clients" "${H[@]}" -d "$PC" | gr
 # Get a client json representation
 CLIENT=$(curl -sS -L -X GET "${B}/admin/realms/${REALM}/clients" "${H[@]}" -G -d 'clientId=wazuh' |jq '.[] | select(.clientId=="wazuh")')
 
-# Get client id 
+# Get client id
 CID=$(echo $CLIENT | jq -r '.id' )
 
 # Generate all-access and admin role for the realm
@@ -99,7 +99,7 @@ curl -sS -L -X POST "${B}/admin/realms/${REALM}/roles" "${H[@]}" -d "$PR2" | gre
 ## create new user
 PU='{
   "username": "wazuh",
-  "email": "hello@wazuh.com",
+  "email": "hello@theopenarmor.org",
   "firstName": "Wazuh",
   "lastName": "Wazuh",
   "emailVerified": true,
@@ -113,7 +113,7 @@ curl -sS -L -X POST "${B}/admin/realms/${REALM}/users" "${H[@]}" -d "$PU" | grep
 ## Get a user json representation
 USER=$(curl -sS -L -X GET "${B}/admin/realms/${REALM}/users" "${H[@]}" -G -d 'username=wazuh' |jq '.[] | select(.username=="wazuh")')
 
-### Get user id 
+### Get user id
 USERID=$(echo $USER | jq -r '.id' )
 
 # Get roles

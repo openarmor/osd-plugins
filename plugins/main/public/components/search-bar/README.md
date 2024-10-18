@@ -196,6 +196,6 @@ This is used in:
   - `onSearch` component handler
 
 Its syntax is equal to Wazuh API Query Language
-https://wazuh.com/<major_version>.<minor_version>/user-manual/api/queries.html
+https://theopenarmor.org/<major_version>.<minor_version>/user-manual/api/queries.html
 
 > The AQL query language is a implementation of this syntax.

@@ -92,7 +92,7 @@ curl -sS -L -X POST "${B}/admin/realms/${REALM}/roles" "${H[@]}" -d "$PR2" | gre
 ## create new user
 PU='{
   "username": "wazuh",
-  "email": "hello@wazuh.com",
+  "email": "hello@theopenarmor.org",
   "firstName": "Wazuh",
   "lastName": "Wazuh",
   "emailVerified": true,
